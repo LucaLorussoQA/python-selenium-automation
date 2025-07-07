@@ -1,0 +1,5 @@
+allure-behave
+behave~=1.2.6
+selenium~=4.32.0
+webdriver-manager~=4.0.2
+pages~=0.3

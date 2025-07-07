@@ -1,0 +1,451 @@
+2025-06-27 10:19:11,277 - support.logger - INFO - 
+Started scenario: User is able to open Privacy Policy
+2025-06-27 10:19:17,418 - support.logger - INFO - Started step: <given "Open Target App page">
+2025-06-27 10:19:17,418 - support.logger - INFO - Opening URL: https://www.target.com/c/target-app/-/N-4th2r
+2025-06-27 10:19:18,811 - support.logger - INFO - Started step: <given "Store original window">
+2025-06-27 10:19:18,811 - support.logger - INFO - Original window: 89F600BD2FBC57A8FC7FD78D98F530A8
+2025-06-27 10:19:18,812 - support.logger - INFO - Started step: <when "Click Privacy Policy link">
+2025-06-27 10:19:18,812 - support.logger - INFO - Clicking on ('css selector', "a[aria-label*='privacy policy']")
+2025-06-27 10:19:19,223 - support.logger - INFO - Started step: <when "Switch to new window">
+2025-06-27 10:19:19,226 - support.logger - INFO - Switching to a new window: 5CEAE26DE1ED90DD29ACFDBB1AE37FB5
+2025-06-27 10:19:19,228 - support.logger - INFO - Started step: <then "Verify Privacy Policy page opened">
+2025-06-27 10:19:20,123 - support.logger - INFO - Started step: <then "Close current page">
+2025-06-27 10:19:20,188 - support.logger - INFO - Started step: <then "Return to original window">
+2025-06-27 10:19:20,188 - support.logger - INFO - Switching to window: 89F600BD2FBC57A8FC7FD78D98F530A8
+2025-06-27 10:20:01,312 - support.logger - INFO - 
+Started scenario: User can open and close Terms and Conditions from sign in page
+2025-06-27 10:20:02,783 - support.logger - INFO - Started step: <given "Open sign in page">
+2025-06-27 10:20:03,941 - support.logger - INFO - Started step: <when "Store original window">
+2025-06-27 10:20:03,942 - support.logger - INFO - Original window: 3184CF699A07F58FCF7657B9045D782F
+2025-06-27 10:20:03,942 - support.logger - INFO - Started step: <when "Click on Target terms and conditions link">
+2025-06-27 10:20:03,942 - support.logger - INFO - Clicking on ('css selector', "a[aria-label*='terms & conditions']")
+2025-06-27 10:20:04,254 - support.logger - INFO - Started step: <when "Switch to the newly opened window">
+2025-06-27 10:20:04,257 - support.logger - INFO - Switching to a new window: B2CEB8F6A27B95E33C1AC9D34AF23ECC
+2025-06-27 10:20:04,259 - support.logger - INFO - Started step: <then "Verify Terms and Conditions page is opened">
+2025-06-27 10:20:05,216 - support.logger - INFO - Started step: <then "User can close new window and switch back to original">
+2025-06-27 10:20:28,369 - support.logger - INFO - 
+Started scenario: 'Your cart is empty' message is shown for empty cart
+2025-06-27 10:20:29,759 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:20:29,760 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:20:30,780 - support.logger - INFO - Started step: <when "Click on Cart icon">
+2025-06-27 10:20:30,780 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/CartLink']")
+2025-06-27 10:20:32,101 - support.logger - INFO - Started step: <then "Verify 'Your cart is empty' message is shown">
+2025-06-27 10:20:32,223 - support.logger - INFO - Started step: <then "Verify Cart page opened">
+2025-06-27 10:20:32,413 - support.logger - INFO - 
+Started scenario: User can add a product to cart
+2025-06-27 10:20:33,629 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:20:33,630 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:20:34,956 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-27 10:20:34,957 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-27 10:20:35,247 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:20:45,441 - support.logger - INFO - Started step: <when "Click on Add to Cart button">
+2025-06-27 10:20:46,127 - support.logger - INFO - Started step: <when "Store product name">
+2025-06-27 10:20:46,135 - support.logger - INFO - Started step: <when "Confirm Add to Cart button from side navigation">
+2025-06-27 10:20:51,217 - support.logger - INFO - Started step: <when "Open cart pages">
+2025-06-27 10:20:52,260 - support.logger - INFO - Started step: <then "Verify cart has 1 item(s)">
+2025-06-27 10:20:52,893 - support.logger - INFO - Started step: <then "Verify cart has correct product">
+2025-06-27 10:21:20,980 - support.logger - INFO - 
+Started scenario: User can search for tea
+2025-06-27 10:21:22,562 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:21:22,562 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:21:23,829 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-27 10:21:23,829 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-27 10:21:24,319 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:21:34,644 - support.logger - INFO - Started step: <then "Verify search worked for tea">
+2025-06-27 10:21:34,778 - support.logger - INFO - 
+Started scenario: User can search for a mug on Target
+2025-06-27 10:21:36,057 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:21:36,058 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:21:37,084 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-27 10:21:37,085 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-27 10:21:37,702 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:21:48,030 - support.logger - INFO - Started step: <then "Verify search worked for mug">
+2025-06-27 10:21:48,164 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.1 
+2025-06-27 10:21:49,452 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:21:49,452 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:21:50,764 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-27 10:21:50,764 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-27 10:21:51,309 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:22:01,477 - support.logger - INFO - Started step: <then "Verify search worked for tea">
+2025-06-27 10:22:01,681 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.2 
+2025-06-27 10:22:03,066 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:22:03,066 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:22:04,085 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-27 10:22:04,085 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-27 10:22:04,733 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:22:14,979 - support.logger - INFO - Started step: <then "Verify search worked for mug">
+2025-06-27 10:22:15,103 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.3 
+2025-06-27 10:22:16,434 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:22:16,434 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:22:17,676 - support.logger - INFO - Started step: <when "Search for coffee">
+2025-06-27 10:22:17,676 - support.logger - INFO - Entering "coffee" in ('id', 'search')
+2025-06-27 10:22:18,251 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:22:28,378 - support.logger - INFO - Started step: <then "Verify search worked for coffee">
+2025-06-27 10:22:28,517 - support.logger - INFO - 
+Started scenario: Verify that user can see product names and images
+2025-06-27 10:22:29,793 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:22:29,793 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:22:30,272 - support.logger - INFO - Started step: <when "Search for AirPods">
+2025-06-27 10:22:30,272 - support.logger - INFO - Entering "AirPods" in ('id', 'search')
+2025-06-27 10:22:32,030 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:22:42,255 - support.logger - INFO - Started step: <then "Verify that every product has a name and an image">
+2025-06-27 10:22:44,500 - support.logger - INFO - 
+Started scenario: User can see favorites tooltip for search results
+2025-06-27 10:22:45,743 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-27 10:22:45,743 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-27 10:22:47,242 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-27 10:22:47,243 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-27 10:22:47,371 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-27 10:22:57,633 - support.logger - INFO - Started step: <when "Hover favorites icon">
+2025-06-27 10:22:57,633 - support.logger - INFO - Searching for ('css selector', "[data-test='FavoritesButton']")
+2025-06-27 10:22:57,931 - support.logger - INFO - Started step: <then "Favorites tooltip is shown">
+2025-06-27 10:22:57,931 - support.logger - INFO - Waiting for element ('xpath', "//*[contains(text(), 'Click to sign in and save')]")
+2025-06-29 11:05:40,492 - support.logger - INFO - 
+Started scenario: 'Your cart is empty' message is shown for empty cart
+2025-06-29 11:05:43,723 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:05:43,723 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:05:44,817 - support.logger - INFO - Started step: <when "Click on Cart icon">
+2025-06-29 11:05:44,817 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/CartLink']")
+2025-06-29 11:05:46,550 - support.logger - INFO - Started step: <then "Verify 'Your cart is empty' message is shown">
+2025-06-29 11:05:46,791 - support.logger - INFO - Started step: <then "Verify Cart page opened">
+2025-06-29 11:05:46,900 - support.logger - INFO - 
+Started scenario: User can add a product to cart
+2025-06-29 11:05:48,199 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:05:48,200 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:05:49,856 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-29 11:05:49,856 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-29 11:05:49,955 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:06:00,163 - support.logger - INFO - Started step: <when "Click on Add to Cart button">
+2025-06-29 11:06:00,854 - support.logger - INFO - Started step: <when "Store product name">
+2025-06-29 11:06:00,871 - support.logger - INFO - Started step: <when "Confirm Add to Cart button from side navigation">
+2025-06-29 11:06:05,963 - support.logger - INFO - Started step: <when "Open cart pages">
+2025-06-29 11:06:06,617 - support.logger - INFO - Started step: <then "Verify cart has 1 item(s)">
+2025-06-29 11:06:07,199 - support.logger - INFO - Started step: <then "Verify cart has correct product">
+2025-06-29 11:06:07,318 - support.logger - INFO - 
+Started scenario: Verify header has correct amount of links
+2025-06-29 11:06:08,758 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:06:08,758 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:06:10,068 - support.logger - INFO - Started step: <then "Verify header has 6 links">
+2025-06-29 11:06:10,241 - support.logger - INFO - 
+Started scenario: User can select Help topic Promotions & Coupons
+2025-06-29 11:06:11,458 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-06-29 11:06:14,601 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-06-29 11:06:14,601 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-06-29 11:06:14,630 - support.logger - INFO - Started step: <when "Select Help topic Promotions & Coupons">
+2025-06-29 11:06:14,631 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-06-29 11:06:18,135 - support.logger - INFO - Started step: <then "Verify help Current promotions page opened">
+2025-06-29 11:06:18,135 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Current promotions']")
+2025-06-29 11:06:18,235 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-06-29 11:06:19,444 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-06-29 11:06:22,468 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-06-29 11:06:22,468 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-06-29 11:06:22,491 - support.logger - INFO - Started step: <when "Select Help topic Orders & Purchases">
+2025-06-29 11:06:22,491 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-06-29 11:06:24,733 - support.logger - INFO - Started step: <then "Verify help Print a receipt page opened">
+2025-06-29 11:06:24,733 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Print a receipt']")
+2025-06-29 11:06:24,824 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-06-29 11:06:26,063 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-06-29 11:06:29,211 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-06-29 11:06:29,212 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-06-29 11:06:29,235 - support.logger - INFO - Started step: <when "Select Help topic Partner Programs">
+2025-06-29 11:06:29,236 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-06-29 11:06:31,480 - support.logger - INFO - Started step: <then "Verify help Ulta Beauty at Target page opened">
+2025-06-29 11:06:31,480 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Ulta Beauty at Target']")
+2025-06-29 11:06:31,578 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-06-29 11:06:32,804 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-06-29 11:06:35,227 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-06-29 11:06:35,228 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-06-29 11:06:35,254 - support.logger - INFO - Started step: <when "Select Help topic Delivery & Pickup">
+2025-06-29 11:06:35,254 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-06-29 11:06:37,496 - support.logger - INFO - Started step: <then "Verify help Drive Up & Order Pickup page opened">
+2025-06-29 11:06:37,496 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Drive Up & Order Pickup']")
+2025-06-29 11:06:37,594 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-06-29 11:06:38,797 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-06-29 11:06:41,825 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-06-29 11:06:41,825 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-06-29 11:06:41,849 - support.logger - INFO - Started step: <when "Select Help topic Payment Options">
+2025-06-29 11:06:41,850 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-06-29 11:06:44,874 - support.logger - INFO - Started step: <then "Verify help SNAP EBT page opened">
+2025-06-29 11:06:44,874 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' SNAP EBT']")
+2025-06-29 11:06:44,969 - support.logger - INFO - 
+Started scenario: User can select colors
+2025-06-29 11:06:46,240 - support.logger - INFO - Started step: <given "Open target product A-54551690 pages">
+2025-06-29 11:06:49,553 - support.logger - INFO - Started step: <then "Verify user can click through colors">
+2025-06-29 11:07:06,071 - support.logger - INFO - 
+Started scenario: User can search for a product
+2025-06-29 11:07:07,303 - support.logger - INFO - Started step: <given "Open Google pages">
+2025-06-29 11:07:07,701 - support.logger - INFO - Started step: <when "Input Car into search field">
+2025-06-29 11:07:11,775 - support.logger - INFO - Started step: <when "Click on search icon">
+2025-06-29 11:07:12,901 - support.logger - INFO - Started step: <then "Product results for Car are shown">
+2025-06-29 11:07:12,972 - support.logger - INFO - 
+Started scenario: User can search for tea
+2025-06-29 11:07:14,190 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:07:14,190 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:07:16,697 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-29 11:07:16,697 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-29 11:07:16,788 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:07:26,823 - support.logger - INFO - Started step: <then "Verify search worked for tea">
+2025-06-29 11:07:26,964 - support.logger - INFO - 
+Started scenario: User can search for a mug on Target
+2025-06-29 11:07:28,232 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:07:28,233 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:07:29,413 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-29 11:07:29,414 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-29 11:07:29,990 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:07:40,217 - support.logger - INFO - Started step: <then "Verify search worked for mug">
+2025-06-29 11:07:40,354 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.1 
+2025-06-29 11:07:41,555 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:07:41,555 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:07:43,046 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-29 11:07:43,046 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-29 11:07:43,131 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:07:53,341 - support.logger - INFO - Started step: <then "Verify search worked for tea">
+2025-06-29 11:07:53,480 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.2 
+2025-06-29 11:07:54,852 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:07:54,853 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:07:57,582 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-29 11:07:57,582 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-29 11:07:57,670 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:08:07,706 - support.logger - INFO - Started step: <then "Verify search worked for mug">
+2025-06-29 11:08:07,850 - support.logger - INFO - 
+Started scenario: User can search for a product -- @1.3 
+2025-06-29 11:08:09,141 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:08:09,141 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:08:11,122 - support.logger - INFO - Started step: <when "Search for coffee">
+2025-06-29 11:08:11,122 - support.logger - INFO - Entering "coffee" in ('id', 'search')
+2025-06-29 11:08:11,693 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:08:21,901 - support.logger - INFO - Started step: <then "Verify search worked for coffee">
+2025-06-29 11:08:22,039 - support.logger - INFO - 
+Started scenario: Verify that user can see product names and images
+2025-06-29 11:08:23,245 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:08:23,245 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:08:24,862 - support.logger - INFO - Started step: <when "Search for AirPods">
+2025-06-29 11:08:24,862 - support.logger - INFO - Entering "AirPods" in ('id', 'search')
+2025-06-29 11:08:25,088 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:08:35,159 - support.logger - INFO - Started step: <then "Verify that every product has a name and an image">
+2025-06-29 11:08:37,403 - support.logger - INFO - 
+Started scenario: User can see favorites tooltip for search results
+2025-06-29 11:08:38,618 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:08:38,618 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:08:39,749 - support.logger - INFO - Started step: <when "Search for tea">
+2025-06-29 11:08:39,749 - support.logger - INFO - Entering "tea" in ('id', 'search')
+2025-06-29 11:08:40,367 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:08:50,415 - support.logger - INFO - Started step: <when "Hover favorites icon">
+2025-06-29 11:08:50,416 - support.logger - INFO - Searching for ('css selector', "[data-test='FavoritesButton']")
+2025-06-29 11:08:50,724 - support.logger - INFO - Started step: <then "Favorites tooltip is shown">
+2025-06-29 11:08:50,724 - support.logger - INFO - Waiting for element ('xpath', "//*[contains(text(), 'Click to sign in and save')]")
+2025-06-29 11:08:50,897 - support.logger - INFO - 
+Started scenario: User is able to open Privacy Policy
+2025-06-29 11:08:52,221 - support.logger - INFO - Started step: <given "Open Target App page">
+2025-06-29 11:08:52,222 - support.logger - INFO - Opening URL: https://www.target.com/c/target-app/-/N-4th2r
+2025-06-29 11:08:53,555 - support.logger - INFO - Started step: <given "Store original window">
+2025-06-29 11:08:53,556 - support.logger - INFO - Original window: D63711FF2FBFE80D98ED245964A3F76E
+2025-06-29 11:08:53,556 - support.logger - INFO - Started step: <when "Click Privacy Policy link">
+2025-06-29 11:08:53,556 - support.logger - INFO - Clicking on ('css selector', "a[aria-label*='privacy policy']")
+2025-06-29 11:08:53,813 - support.logger - INFO - Started step: <when "Switch to new window">
+2025-06-29 11:08:53,817 - support.logger - INFO - Switching to a new window: 384A97279C2D500821018A0EF86B4FBA
+2025-06-29 11:08:53,820 - support.logger - INFO - Started step: <then "Verify Privacy Policy page opened">
+2025-06-29 11:08:54,665 - support.logger - INFO - Started step: <then "Close current page">
+2025-06-29 11:08:54,719 - support.logger - INFO - Started step: <then "Return to original window">
+2025-06-29 11:08:54,720 - support.logger - INFO - Switching to window: D63711FF2FBFE80D98ED245964A3F76E
+2025-06-29 11:08:54,805 - support.logger - INFO - 
+Started scenario: User can open and close Terms and Conditions from sign in page
+2025-06-29 11:08:56,034 - support.logger - INFO - Started step: <given "Open sign in page">
+2025-06-29 11:08:57,076 - support.logger - INFO - Started step: <when "Store original window">
+2025-06-29 11:08:57,077 - support.logger - INFO - Original window: 7EBC5FC2F1376FA7C5FE6D8D76767AF0
+2025-06-29 11:08:57,077 - support.logger - INFO - Started step: <when "Click on Target terms and conditions link">
+2025-06-29 11:08:57,077 - support.logger - INFO - Clicking on ('css selector', "a[aria-label*='terms & conditions']")
+2025-06-29 11:08:57,355 - support.logger - INFO - Started step: <when "Switch to the newly opened window">
+2025-06-29 11:08:57,359 - support.logger - INFO - Switching to a new window: 50589EED62B14638F6097862BA11E010
+2025-06-29 11:08:57,362 - support.logger - INFO - Started step: <then "Verify Terms and Conditions page is opened">
+2025-06-29 11:08:58,387 - support.logger - INFO - Started step: <then "User can close new window and switch back to original">
+2025-06-29 11:14:17,590 - support.logger - INFO - 
+Started scenario: 'Your cart is empty' message is shown for empty cart
+2025-06-29 11:14:19,244 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:14:19,244 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:14:20,668 - support.logger - INFO - Started step: <when "Click on Cart icon">
+2025-06-29 11:14:20,668 - support.logger - INFO - Clicking on ('css selector', "[data-test='@web/CartLink']")
+2025-06-29 11:14:22,053 - support.logger - INFO - Started step: <then "Verify 'Your cart is empty' message is shown">
+2025-06-29 11:14:22,263 - support.logger - INFO - Started step: <then "Verify Cart page opened">
+2025-06-29 11:14:22,351 - support.logger - INFO - 
+Started scenario: User can add a product to cart
+2025-06-29 11:14:23,652 - support.logger - INFO - Started step: <given "Open target main pages">
+2025-06-29 11:14:23,652 - support.logger - INFO - Opening URL: https://www.target.com/
+2025-06-29 11:14:24,627 - support.logger - INFO - Started step: <when "Search for mug">
+2025-06-29 11:14:24,628 - support.logger - INFO - Entering "mug" in ('id', 'search')
+2025-06-29 11:14:25,230 - support.logger - INFO - Clicking on ('xpath', "//button[@data-test='@web/Search/SearchButton']")
+2025-06-29 11:14:35,487 - support.logger - INFO - Started step: <when "Click on Add to Cart button">
+2025-06-29 11:14:35,721 - support.logger - INFO - Started step: <when "Store product name">
+2025-06-29 11:14:35,789 - support.logger - INFO - Started step: <when "Confirm Add to Cart button from side navigation">
+2025-06-29 11:14:40,881 - support.logger - INFO - Started step: <when "Open cart pages">
+2025-06-29 11:14:41,484 - support.logger - INFO - Started step: <then "Verify cart has 1 item(s)">
+2025-06-29 11:14:42,173 - support.logger - INFO - Started step: <then "Verify cart has correct product">
+2025-07-06 23:00:17,607 - support.logger - INFO - 
+Started scenario: User can open and close Terms and Conditions from sign in page
+2025-07-06 23:00:28,607 - support.logger - INFO - Started step: <given "Open sign in page">
+2025-07-06 23:00:31,875 - support.logger - INFO - Started step: <when "Store original window">
+2025-07-06 23:00:31,876 - support.logger - INFO - Original window: 195D1FA1D3FA23F1D71C6D13E1E438D1
+2025-07-06 23:00:31,876 - support.logger - INFO - Started step: <when "Click on Target terms and conditions link">
+2025-07-06 23:00:31,877 - support.logger - INFO - Clicking on ('css selector', "a[aria-label*='terms & conditions']")
+2025-07-06 23:00:32,483 - support.logger - INFO - Started step: <when "Switch to the newly opened window">
+2025-07-06 23:00:32,491 - support.logger - INFO - Switching to a new window: 85E9EF691440944787028B21F782EB1C
+2025-07-06 23:00:32,492 - support.logger - INFO - Started step: <then "Verify Terms and Conditions page is opened">
+2025-07-06 23:00:35,385 - support.logger - INFO - Started step: <then "User can close new window and switch back to original">
+2025-07-07 11:16:52,597 - support.logger - INFO - 
+Started scenario: User can select Help topic Promotions & Coupons
+2025-07-07 11:17:04,268 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:17:08,541 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:17:08,541 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:17:08,566 - support.logger - INFO - Started step: <when "Select Help topic Promotions & Coupons">
+2025-07-07 11:17:08,566 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:17:11,887 - support.logger - INFO - Started step: <then "Verify help Current promotions page opened">
+2025-07-07 11:17:11,888 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Current promotions']")
+2025-07-07 11:17:19,597 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:17:20,888 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:17:25,607 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:17:25,607 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:17:25,631 - support.logger - INFO - Started step: <when "Select Help topic Orders & Purchases">
+2025-07-07 11:17:25,631 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:17:27,931 - support.logger - INFO - Started step: <then "Verify help Print a receipt page opened">
+2025-07-07 11:17:27,931 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Print a receipt']")
+2025-07-07 11:17:28,016 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:17:29,397 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:17:33,838 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:17:33,838 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:17:33,847 - support.logger - INFO - Started step: <when "Select Help topic Partner Programs">
+2025-07-07 11:17:33,847 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:17:36,763 - support.logger - INFO - Started step: <then "Verify help Ulta Beauty at Target page opened">
+2025-07-07 11:17:36,763 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Ulta Beauty at Target']")
+2025-07-07 11:17:36,858 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:17:38,088 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:17:41,606 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:17:41,606 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:17:41,622 - support.logger - INFO - Started step: <when "Select Help topic Delivery & Pickup">
+2025-07-07 11:17:41,623 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:17:44,862 - support.logger - INFO - Started step: <then "Verify help Drive Up & Order Pickup page opened">
+2025-07-07 11:17:44,862 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Drive Up & Order Pickup']")
+2025-07-07 11:17:44,964 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:17:46,298 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:17:49,627 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:17:49,628 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:17:49,653 - support.logger - INFO - Started step: <when "Select Help topic Payment Options">
+2025-07-07 11:17:49,654 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:17:52,003 - support.logger - INFO - Started step: <then "Verify help SNAP EBT page opened">
+2025-07-07 11:17:52,003 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' SNAP EBT']")
+2025-07-07 11:18:21,360 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:18:23,010 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:18:26,530 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:18:26,530 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:18:26,555 - support.logger - INFO - Started step: <when "Select Help topic Orders & Purchases">
+2025-07-07 11:18:26,555 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:18:28,832 - support.logger - INFO - Started step: <then "Verify help Print a receipt page opened">
+2025-07-07 11:18:28,833 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Print a receipt']")
+2025-07-07 11:18:28,928 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:18:30,186 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:18:32,939 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:18:32,940 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:18:32,961 - support.logger - INFO - Started step: <when "Select Help topic Partner Programs">
+2025-07-07 11:18:32,961 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:18:35,341 - support.logger - INFO - Started step: <then "Verify help Ulta Beauty at Target page opened">
+2025-07-07 11:18:35,342 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Ulta Beauty at Target']")
+2025-07-07 11:18:35,440 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:18:36,730 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:18:40,018 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:18:40,018 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:18:40,038 - support.logger - INFO - Started step: <when "Select Help topic Delivery & Pickup">
+2025-07-07 11:18:40,038 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:18:43,548 - support.logger - INFO - Started step: <then "Verify help Drive Up & Order Pickup page opened">
+2025-07-07 11:18:43,549 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Drive Up & Order Pickup']")
+2025-07-07 11:18:43,650 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:18:44,990 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:18:49,123 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:18:49,123 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:18:49,147 - support.logger - INFO - Started step: <when "Select Help topic Payment Options">
+2025-07-07 11:18:49,147 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:18:52,205 - support.logger - INFO - Started step: <then "Verify help SNAP EBT page opened">
+2025-07-07 11:18:52,206 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' SNAP EBT']")
+2025-07-07 11:19:40,291 - support.logger - INFO - 
+Started scenario: User can select Help topic Promotions & Coupons
+2025-07-07 11:19:42,559 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:19:47,021 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:19:47,022 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:19:47,054 - support.logger - INFO - Started step: <when "Select Help topic Promotions & Coupons">
+2025-07-07 11:19:47,054 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:19:50,106 - support.logger - INFO - Started step: <then "Verify help Current promotions page opened">
+2025-07-07 11:19:50,106 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Current promotions']")
+2025-07-07 11:27:49,707 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:27:52,542 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:27:56,752 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:27:56,753 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:27:56,853 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:27:58,313 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:28:16,609 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:28:16,610 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:28:16,636 - support.logger - INFO - Started step: <when "Select Help topic Partner Programs">
+2025-07-07 11:28:16,636 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:28:20,005 - support.logger - INFO - Started step: <then "Verify help Ulta Beauty at Target page opened">
+2025-07-07 11:28:20,005 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Ulta Beauty at Target']")
+2025-07-07 11:28:20,098 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:28:21,363 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:28:26,422 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:28:26,423 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:28:26,446 - support.logger - INFO - Started step: <when "Select Help topic Delivery & Pickup">
+2025-07-07 11:28:26,446 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:28:31,440 - support.logger - INFO - Started step: <then "Verify help Drive Up & Order Pickup page opened">
+2025-07-07 11:28:31,441 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Drive Up & Order Pickup']")
+2025-07-07 11:28:31,537 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:28:32,893 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:28:44,065 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:28:44,065 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:28:44,073 - support.logger - ERROR - Step failed: <then "Verify help Returns page opened">
+2025-07-07 11:38:37,215 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:38:38,768 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:38:42,075 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:38:42,076 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:38:42,099 - support.logger - INFO - Started step: <when "Select Help topic Orders & Purchases">
+2025-07-07 11:38:42,099 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:38:44,400 - support.logger - INFO - Started step: <then "Verify help Print a receipt page opened">
+2025-07-07 11:38:44,400 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Print a receipt']")
+2025-07-07 11:38:44,491 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:38:45,755 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:38:49,157 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:38:49,158 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:38:49,181 - support.logger - INFO - Started step: <when "Select Help topic Partner Programs">
+2025-07-07 11:38:49,181 - support.logger - INFO - Searching for ('css selector', "select[id*='viewHelpTopics']")
+2025-07-07 11:38:52,180 - support.logger - INFO - Started step: <then "Verify help Ulta Beauty at Target page opened">
+2025-07-07 11:38:52,181 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Ulta Beauty at Target']")
+2025-07-07 11:38:52,278 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:38:53,524 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:38:56,137 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:38:56,137 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:38:56,147 - support.logger - ERROR - Step failed: <then "Verify help Returns page opened">
+2025-07-07 11:38:56,216 - support.logger - INFO - 
+Started scenario: User can select Help topic Target Circle™
+2025-07-07 11:38:57,455 - support.logger - INFO - Started step: <given "Open Help page for Returns">
+2025-07-07 11:39:00,773 - support.logger - INFO - Started step: <then "Verify help Returns page opened">
+2025-07-07 11:39:00,773 - support.logger - INFO - Waiting for element ('xpath', "//h1[text()=' Returns']")
+2025-07-07 11:39:00,777 - support.logger - ERROR - Step failed: <then "Verify help Returns page opened">
